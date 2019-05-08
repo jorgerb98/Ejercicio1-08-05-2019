@@ -4,18 +4,22 @@ public class Reparacion {
 
 	private final double PRECIOBASE = 30;
 	private Vehiculo vehiculo;
+	private TipoVehiculo tipoReparacion;
 
 
 	public Reparacion( Vehiculo vehiculo) {
 
 		this.vehiculo = vehiculo;
+		tipoReparacion=vehiculo.getTipo();
 	}
 
 	public double getPrecioBase() {
 		return PRECIOBASE;
 	}
 
-
+	public TipoVehiculo getTipoReparacion() {
+		return tipoReparacion;
+	}
 
 	public Vehiculo getVehiculo() {
 		return vehiculo;
@@ -34,7 +38,7 @@ public class Reparacion {
 		return "Reparacion{" +
 			   " Tipo = " + vehiculo.getTipo() +
 			   " | Color = " + vehiculo.getColor() +
-			   " | Precio =" + (PRECIOBASE + getVehiculo().getprecioReparacion()) + "€" +
+			   " | Precio = " + (PRECIOBASE + getVehiculo().getprecioReparacion()) + "€" +
 			   '}';
 	}
 }

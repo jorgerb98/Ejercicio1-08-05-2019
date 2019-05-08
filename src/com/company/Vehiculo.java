@@ -12,8 +12,8 @@ public class Vehiculo {
 
 	}
 
-	public String getTipo() {
-		return tipo;
+	protected TipoVehiculo getTipo() {
+		return null;
 	}
 
 	public double getprecioReparacion() {

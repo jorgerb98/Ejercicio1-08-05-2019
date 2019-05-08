@@ -2,15 +2,15 @@ package com.company;
 
 public class Moto extends Vehiculo {
 
-	private  String tipo;
+	private  TipoVehiculo tipo;
 
 	public Moto(String color){
 		super(25,color);
-		tipo="Moto";
+
 	}
 
 	@Override
-	public String getTipo() {
-		return tipo;
+	public TipoVehiculo getTipo() {
+		return TipoVehiculo.Moto;
 	}
 }
